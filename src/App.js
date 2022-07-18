@@ -1,8 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import alanBtn from '@alan-ai/alan-sdk-web';
 import './App.css';
 
+import RecipesCards from './components/RecipesCards';
+
 function App() {
+  const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
     alanBtn({
@@ -11,8 +14,7 @@ function App() {
         // eslint-disable-next-line default-case
         switch (command) {
           case "newRecipes":
-            console.log(recipes);
-            console.log(recipes.count);
+            setRecipes(recipes)
             break;
         }
       }
@@ -22,6 +24,7 @@ function App() {
   return (
     <div className="App">
       <h1>Acoustic Recipe</h1>
+      <RecipesCards recipes={recipes} />
     </div>
   );
 }
