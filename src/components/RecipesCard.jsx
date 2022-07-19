@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Card,
   CardContent,
@@ -10,6 +10,8 @@ import {
 import { capitalizeFirstLetter } from "../commonFunctions";
 
 export default function RecipesCard({ recipe, i }) {
+  const [showDetails, setShowDetails] = useState(false);
+
   if (!recipe) return;
   const {
     label,
@@ -19,6 +21,7 @@ export default function RecipesCard({ recipe, i }) {
     dietLabels,
     digest,
     dishType,
+    mealType,
     healthLabels,
     image,
     ingredientLines,
@@ -43,7 +46,10 @@ export default function RecipesCard({ recipe, i }) {
           Basic Information
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Cuisine Type: {capitalizeFirstLetter(cuisineType[0])}
+          Cuisine Type: {cuisineType ? capitalizeFirstLetter(cuisineType[0]) : "N/A"}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Meal Type: {mealType ? capitalizeFirstLetter(mealType[0]) : "N/A"}
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Dish Type: {dishType ? capitalizeFirstLetter(dishType[0]) : "N/A"}
@@ -58,34 +64,41 @@ export default function RecipesCard({ recipe, i }) {
           Cautions: {cautions.length === 0 ? "No Cautions" : cautions.toString()}
         </Typography>
 
-        <Typography variant="body1" color="text.primary">
-          Ingredients
-        </Typography>
-        <Typography gutterBottom variant="body2" color="text.secondary">
-          {ingredientLines.toString().substr(0,500)+"..."}
-        </Typography>
+        { showDetails &&  
+        <div>
+          <Typography variant="body1" color="text.primary">
+            Ingredients
+          </Typography>
+          <Typography gutterBottom variant="body2" color="text.secondary">
+            {ingredientLines.toString().substr(0,500)+"..."}
+          </Typography>
 
-        <Typography variant="body1" color="text.primary">
-          Nutrients Facts
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Calories: {Math.round(calories)} kcal
-        </Typography>
-        {
-          digest.map((nutrient, i) => (
-            <Typography key={i} variant="body2" color="text.secondary">
-              {nutrient.label}: {nutrient.total.toPrecision(3)} {nutrient.unit}
-            </Typography>
-          ))
+          <Typography variant="body1" color="text.primary">
+            Nutrients Facts
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            Calories: {Math.round(calories)} kcal
+          </Typography>
+          {
+            digest.map((nutrient, i) => (
+              <Typography key={i} variant="body2" color="text.secondary">
+                {nutrient.label}: {nutrient.total.toPrecision(3)} {nutrient.unit}
+              </Typography>
+            ))
+          }
+
+          <br />
+        </div>
         }
-
-        <br />
   
         <Typography variant="h5" color="text.primary">
           {i+1}
         </Typography>
         <br />
 
+        <Button variant="contained" size="large" onClick={() => {setShowDetails(showDetails => !showDetails)}}>
+          {showDetails ? "Hide Details" : "Show Details"}
+        </Button><br/><br/>
         <Button variant="outlined" size="large" href={url}>Instructions</Button>
       </CardContent>
         

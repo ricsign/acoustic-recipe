@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid, Typography, Grow, Button} from '@mui/material';
+import {Grid, Typography, Grow} from '@mui/material';
 
 import RecipesCard from './RecipesCard';
 import styles from '../styles/RecipesCards.module.css'
@@ -41,7 +41,7 @@ export default function RecipesCards({ recipes }) {
         <Grow in>
             <Grid className={styles.container} container alignItems="stretch" spacing={2}>
                 {recipes.hits?.map((recipe, i) => ( 
-                    <Grid key={i} item xs={12} md={6} lg={4} style={{display: 'flex'}}>
+                    <Grid key={i} item xs={12} md={6} lg={4}>
                         <RecipesCard recipe={recipe} i={i} />
                     </Grid>
                 ))}
