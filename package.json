@@ -2,7 +2,7 @@
   "name": "acoustic-recipe",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://ricsign.github.io/acoustic-recipe",
+  "homepage": "https://ricsign.github.io/acoustic-recipe",
   "dependencies": {
     "@alan-ai/alan-sdk-web": "^1.8.34",
     "@emotion/react": "^11.9.3",
