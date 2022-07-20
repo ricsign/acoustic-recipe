@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/acoustic-recipe/static/css/main.b0212155.css",
-    "main.js": "/acoustic-recipe/static/js/main.544033c9.js",
+    "main.js": "/acoustic-recipe/static/js/main.0430038c.js",
     "static/js/787.fbc082ed.chunk.js": "/acoustic-recipe/static/js/787.fbc082ed.chunk.js",
     "index.html": "/acoustic-recipe/index.html",
     "main.b0212155.css.map": "/acoustic-recipe/static/css/main.b0212155.css.map",
-    "main.544033c9.js.map": "/acoustic-recipe/static/js/main.544033c9.js.map",
+    "main.0430038c.js.map": "/acoustic-recipe/static/js/main.0430038c.js.map",
     "787.fbc082ed.chunk.js.map": "/acoustic-recipe/static/js/787.fbc082ed.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b0212155.css",
-    "static/js/main.544033c9.js"
+    "static/js/main.0430038c.js"
   ]
 }
