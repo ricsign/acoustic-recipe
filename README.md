@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# Acoustic Recipe
+#### Author: Ric Sign
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React app powered by Alan AI. You can use voice to find the recipe you like in a database of over 3 million recipes. Please visit [this website](https://ricsign.github.io/acoustic-recipe/) for a live demo. 
 
-## Available Scripts
+React + MUI + Alan AI + Edamam
 
-In the project directory, you can run:
+![recipe](https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg)
 
-### `npm start`
+## Intuition and Purposes
+The reason I built this app was inspired by a post written by current university student. There are lots of university students that are having trouble with cooking. Some students do cook, but they also want to keep a healthy body and stay fit. Generally, there are recipe websites, but not much so about nutrients information. Therefore, I decided to create this app.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## How to Use
+When launch the app, you can view the instructions on the page. Even though the main purpose of the app is to provide recipes and nutrients information, you can also ask anything you want from the latest news, to weather, to calculating a simple expression, to a random conversation.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+When you asked for a random or a specific recipe, the app will show you all the results on the screen. You can ask for more recipes, view details or instructions. 
 
-### `npm test`
+## Visit and Download
+Please visit the website [here](https://ricsign.github.io/acoustic-recipe/).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To download, simply clone this project to your local storage.
 
-### `npm run build`
+You can also view the demo photos in the root directory. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
