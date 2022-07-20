@@ -90,11 +90,6 @@ export default function RecipesCard({ recipe, i }) {
           <br />
         </div>
         }
-  
-        <Typography variant="h5" color="text.primary">
-          {i+1}
-        </Typography>
-        <br />
 
         <Button variant="contained" size="large" onClick={() => {setShowDetails(showDetails => !showDetails)}}>
           {showDetails ? "Hide Details" : "Show Details"}
