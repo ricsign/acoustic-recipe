@@ -10,7 +10,7 @@ const displayCards = [
     { color: '#251D3A', title: 'Random Recipes', text: 'Give me some random recipes' },
     { color: '#2A2550', title: 'Recipes by Ingredients', info: 'Chicken, Beef, Spinach, Mangoes, Shrimps, Lobsters, Rice...', text: 'Give me some shrimp recipes' },
     { color: '#E04D01', title: 'Recipes by Dish Names', info: 'Apple Pie, Jambalaya, Macaroni and Cheese, Cheeseburgers...', text: 'Show me the recipes for apple pie' },
-    { color: '#FF7700', title: 'Random Things', info: 'News, Weather, Calculator, Directions, Greetings...', text: 'Tell me the news about smartphones' },
+    { color: '#FF7700', title: 'Random Things', info: 'News, Weather, Calculator, Directions, Greetings...', text: 'Tell me the latest news' },
   ];
 
 export default function RecipesCards({ recipes }) {
